@@ -1,0 +1,13 @@
+D:\PProjects\Sitemaperrorfinder\Sitemaperrorfinder\bin\Release\netcoreapp3.1\Sitemaperrorfinder.exe
+D:\PProjects\Sitemaperrorfinder\Sitemaperrorfinder\bin\Release\netcoreapp3.1\Sitemaperrorfinder.deps.json
+D:\PProjects\Sitemaperrorfinder\Sitemaperrorfinder\bin\Release\netcoreapp3.1\Sitemaperrorfinder.runtimeconfig.json
+D:\PProjects\Sitemaperrorfinder\Sitemaperrorfinder\bin\Release\netcoreapp3.1\Sitemaperrorfinder.runtimeconfig.dev.json
+D:\PProjects\Sitemaperrorfinder\Sitemaperrorfinder\bin\Release\netcoreapp3.1\Sitemaperrorfinder.dll
+D:\PProjects\Sitemaperrorfinder\Sitemaperrorfinder\bin\Release\netcoreapp3.1\Sitemaperrorfinder.pdb
+D:\PProjects\Sitemaperrorfinder\Sitemaperrorfinder\obj\Release\netcoreapp3.1\Sitemaperrorfinder.csprojAssemblyReference.cache
+D:\PProjects\Sitemaperrorfinder\Sitemaperrorfinder\obj\Release\netcoreapp3.1\Sitemaperrorfinder.AssemblyInfoInputs.cache
+D:\PProjects\Sitemaperrorfinder\Sitemaperrorfinder\obj\Release\netcoreapp3.1\Sitemaperrorfinder.AssemblyInfo.cs
+D:\PProjects\Sitemaperrorfinder\Sitemaperrorfinder\obj\Release\netcoreapp3.1\Sitemaperrorfinder.csproj.CoreCompileInputs.cache
+D:\PProjects\Sitemaperrorfinder\Sitemaperrorfinder\obj\Release\netcoreapp3.1\Sitemaperrorfinder.dll
+D:\PProjects\Sitemaperrorfinder\Sitemaperrorfinder\obj\Release\netcoreapp3.1\Sitemaperrorfinder.pdb
+D:\PProjects\Sitemaperrorfinder\Sitemaperrorfinder\obj\Release\netcoreapp3.1\Sitemaperrorfinder.genruntimeconfig.cache
