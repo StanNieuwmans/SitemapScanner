@@ -16,10 +16,10 @@ namespace Sitemaperrorfinder
             var errorDictionary = ProcessSiteMapUrls(listUrl);
             if (errorDictionary.Count != 0)
             {
+                Console.WriteLine("------------------------------ERRORS--------------------------");
                 foreach (var error in errorDictionary)
                 {
-                    Console.WriteLine("------------------------------ERRORS--------------------------");
-                    Console.WriteLine(string.Format(" Status: {0}; URL: {1};", error.Value , error.Key));
+                    Console.WriteLine(string.Format(" Status: {0} URL: {1}", error.Value, error.Key));
                 }
             }
             else
@@ -104,13 +104,17 @@ namespace Sitemaperrorfinder
                                 break;
                         }
                     }
+                    else if (e is System.UriFormatException)
+                    {
+                        statusErrors.Add(url, "The URI specified is not a valid URI.");
+                    }
                     else
                     {
                         errors.Add(url, e.ToString());
                     }
                 }
             }
-            if(statusErrors.Count == 0)
+            if (statusErrors.Count == 0)
             {
                 //Not realy important errors.
                 return errors;
