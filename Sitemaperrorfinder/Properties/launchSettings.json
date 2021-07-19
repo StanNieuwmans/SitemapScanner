@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SitemapScanner": {
+      "commandName": "Project",
+      "workingDirectory": "D:\\Personal\\SitemapScanner"
+    }
+  }
+}

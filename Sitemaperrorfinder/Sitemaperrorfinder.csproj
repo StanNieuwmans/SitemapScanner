@@ -3,6 +3,24 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>SitemapScanner</AssemblyName>
+    <RootNamespace>SitemapScanner</RootNamespace>
+    <PackageReleaseNotes>1.0</PackageReleaseNotes>
+    <RepositoryUrl>https://github.com/StanNieuwmans/SitemapScanner</RepositoryUrl>
+    <RepositoryType>Github</RepositoryType>
+    <PackageTags>1.0</PackageTags>
+    <Description>Just a scanner that checks if pages in your sitemap are available.</Description>
+    <Authors>Stan Nieuwmans</Authors>
+    <PackageIcon>image.png</PackageIcon>
+    <PackageIconUrl />
+    <PackageProjectUrl>https://github.com/StanNieuwmans/SitemapScanner</PackageProjectUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\Stan Nieuwmans\Pictures\image.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
