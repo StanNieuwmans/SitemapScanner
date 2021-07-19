@@ -16,10 +16,10 @@ namespace Sitemaperrorfinder
             var errorDictionary = ProcessSiteMapUrls(listUrl);
             if (errorDictionary.Count != 0)
             {
-                foreach (var tikk in errorDictionary)
+                foreach (var error in errorDictionary)
                 {
                     Console.WriteLine("------------------------------ERRORS--------------------------");
-                    Console.WriteLine(string.Format(" Status: {1}; URL: {0};", tikk.Key, tikk.Value));
+                    Console.WriteLine(string.Format(" Status: {0}; URL: {1};", error.Value , error.Key));
                 }
             }
             else
@@ -72,41 +72,50 @@ namespace Sitemaperrorfinder
         }
         public static Dictionary<string, string> ProcessSiteMapUrls(List<string> listUrls)
         {
+            Dictionary<string, string> statusErrors = new Dictionary<string, string>();
             Dictionary<string, string> errors = new Dictionary<string, string>();
             foreach (var url in listUrls)
             {
-                Console.WriteLine(string.Format("Date/Time: {0}; Crawling: {1};", DateTime.Now.ToString(), url));
-                HttpWebRequest myHttpWebRequest = (HttpWebRequest)WebRequest.Create(url);
-
+                Console.WriteLine(string.Format("Date/Time: {0}; Crawling: {1}", DateTime.Now.ToString(), url));
                 try
                 {
+                    HttpWebRequest myHttpWebRequest = (HttpWebRequest)WebRequest.Create(url);
                     HttpWebResponse myHttpWebResponse = (HttpWebResponse)myHttpWebRequest.GetResponse();
                 }
                 catch (Exception e)
                 {
                     if (e is WebException ex)
                     {
-                        HttpWebResponse rataat = (HttpWebResponse)ex.Response;
+                        HttpWebResponse response = (HttpWebResponse)ex.Response;
 
-                        switch (rataat.StatusCode)
+                        switch (response.StatusCode)
                         {
                             case HttpStatusCode.NotFound:
-                                errors.Add(url, rataat.StatusDescription);
+                                statusErrors.Add(url, response.StatusDescription);
                                 break;
                             case HttpStatusCode.BadRequest:
-                                errors.Add(url, rataat.StatusDescription);
+                                statusErrors.Add(url, response.StatusDescription);
                                 break;
                             case HttpStatusCode.InternalServerError:
-                                errors.Add(url, rataat.StatusDescription);
+                                statusErrors.Add(url, response.StatusDescription);
                                 break;
                             case HttpStatusCode.ServiceUnavailable:
-                                errors.Add(url, rataat.StatusDescription);
+                                statusErrors.Add(url, response.StatusDescription);
                                 break;
                         }
                     }
+                    else
+                    {
+                        errors.Add(url, e.ToString());
+                    }
                 }
             }
-            return errors;
+            if(statusErrors.Count == 0)
+            {
+                //Not realy important errors.
+                return errors;
+            }
+            return statusErrors;
         }
     }
 

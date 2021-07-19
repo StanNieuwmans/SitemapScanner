@@ -23,3 +23,15 @@ D:\PProjects\GetERRORSinSitemap\Sitemaperrorfinder\obj\Debug\netcoreapp3.1\Sitem
 D:\PProjects\GetERRORSinSitemap\Sitemaperrorfinder\obj\Debug\netcoreapp3.1\Sitemaperrorfinder.dll
 D:\PProjects\GetERRORSinSitemap\Sitemaperrorfinder\obj\Debug\netcoreapp3.1\Sitemaperrorfinder.pdb
 D:\PProjects\GetERRORSinSitemap\Sitemaperrorfinder\obj\Debug\netcoreapp3.1\Sitemaperrorfinder.genruntimeconfig.cache
+D:\Personal\SitemapScanner\Sitemaperrorfinder\bin\Debug\netcoreapp3.1\Sitemaperrorfinder.exe
+D:\Personal\SitemapScanner\Sitemaperrorfinder\bin\Debug\netcoreapp3.1\Sitemaperrorfinder.deps.json
+D:\Personal\SitemapScanner\Sitemaperrorfinder\bin\Debug\netcoreapp3.1\Sitemaperrorfinder.runtimeconfig.json
+D:\Personal\SitemapScanner\Sitemaperrorfinder\bin\Debug\netcoreapp3.1\Sitemaperrorfinder.runtimeconfig.dev.json
+D:\Personal\SitemapScanner\Sitemaperrorfinder\bin\Debug\netcoreapp3.1\Sitemaperrorfinder.dll
+D:\Personal\SitemapScanner\Sitemaperrorfinder\bin\Debug\netcoreapp3.1\Sitemaperrorfinder.pdb
+D:\Personal\SitemapScanner\Sitemaperrorfinder\obj\Debug\netcoreapp3.1\Sitemaperrorfinder.AssemblyInfoInputs.cache
+D:\Personal\SitemapScanner\Sitemaperrorfinder\obj\Debug\netcoreapp3.1\Sitemaperrorfinder.AssemblyInfo.cs
+D:\Personal\SitemapScanner\Sitemaperrorfinder\obj\Debug\netcoreapp3.1\Sitemaperrorfinder.csproj.CoreCompileInputs.cache
+D:\Personal\SitemapScanner\Sitemaperrorfinder\obj\Debug\netcoreapp3.1\Sitemaperrorfinder.dll
+D:\Personal\SitemapScanner\Sitemaperrorfinder\obj\Debug\netcoreapp3.1\Sitemaperrorfinder.pdb
+D:\Personal\SitemapScanner\Sitemaperrorfinder\obj\Debug\netcoreapp3.1\Sitemaperrorfinder.genruntimeconfig.cache
