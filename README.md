@@ -1,1 +1,1 @@
-GetERRORSinSitemap
+SitemapScanner
