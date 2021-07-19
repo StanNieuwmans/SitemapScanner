@@ -35,3 +35,4 @@ D:\Personal\SitemapScanner\Sitemaperrorfinder\obj\Debug\netcoreapp3.1\Sitemaperr
 D:\Personal\SitemapScanner\Sitemaperrorfinder\obj\Debug\netcoreapp3.1\Sitemaperrorfinder.dll
 D:\Personal\SitemapScanner\Sitemaperrorfinder\obj\Debug\netcoreapp3.1\Sitemaperrorfinder.pdb
 D:\Personal\SitemapScanner\Sitemaperrorfinder\obj\Debug\netcoreapp3.1\Sitemaperrorfinder.genruntimeconfig.cache
+D:\Personal\SitemapScanner\Sitemaperrorfinder\obj\Debug\netcoreapp3.1\Sitemaperrorfinder.csproj.AssemblyReference.cache
