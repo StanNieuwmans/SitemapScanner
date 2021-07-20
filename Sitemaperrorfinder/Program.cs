@@ -73,7 +73,6 @@ namespace SitemapScanner
         public static Dictionary<string, string> ProcessSiteMapUrls(List<string> listUrls)
         {
             Dictionary<string, string> statusErrors = new Dictionary<string, string>();
-            Dictionary<string, string> errors = new Dictionary<string, string>();
             foreach (var url in listUrls)
             {
                 Console.WriteLine(string.Format("Date/Time: {0}; Crawling: {1}", DateTime.Now.ToString(), url));
@@ -110,14 +109,9 @@ namespace SitemapScanner
                     }
                     else
                     {
-                        errors.Add(url, e.ToString());
+                        statusErrors.Add(url, e.ToString());
                     }
                 }
-            }
-            if (statusErrors.Count == 0)
-            {
-                //Not realy important errors.
-                return errors;
             }
             return statusErrors;
         }
