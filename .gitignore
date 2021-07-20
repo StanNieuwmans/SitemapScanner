@@ -1,9 +1,37 @@
+*.swp
+*.*~
+project.lock.json
+.DS_Store
+*.pyc
+nupkg/
 
-.vs/Sitemaperrorfinder/v16/.suo
-Sitemaperrorfinder/obj/Debug/netcoreapp3.1/apphost.exe
-.vs/Sitemaperrorfinder/v16/.suo
-Sitemaperrorfinder/obj/Debug/netcoreapp3.1/Sitemaperrorfinder.csproj.FileListAbsolute.txt
-Sitemaperrorfinder/obj/project.assets.json
-Sitemaperrorfinder/obj/project.nuget.cache
-Sitemaperrorfinder/obj/Sitemaperrorfinder.csproj.nuget.dgspec.json
-Sitemaperrorfinder/obj/Sitemaperrorfinder.csproj.nuget.g.props
+# Visual Studio Code
+.vscode
+
+# Rider
+.idea
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+# Visual Studio 2015
+.vs/
