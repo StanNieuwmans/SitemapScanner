@@ -45,6 +45,8 @@ namespace SitemapScanner
 
             using (WebClient wc = new WebClient())
             {
+
+                wc.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36");
                 wc.Encoding = System.Text.Encoding.UTF8;
 
                 string reply = wc.DownloadString(baseurl);
@@ -60,12 +62,12 @@ namespace SitemapScanner
                 {
                     urls.Add(node["loc"].InnerText);
                 }
-                foreach (XmlNode woh in sitemapList)
+                foreach (XmlNode sitemap in sitemapList)
                 {
-                    var fire = GetSiteMapUrls(woh["loc"].InnerText);
-                    foreach (var tata in fire)
+                    var sitemapUrlList = GetSiteMapUrls(sitemap["loc"].InnerText);
+                    foreach (var siteurl in sitemapUrlList)
                     {
-                        urls.Add(tata);
+                        urls.Add(siteurl);
                     }
                 }
             }
