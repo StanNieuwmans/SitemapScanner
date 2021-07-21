@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
+using System.Threading.Tasks;
 using System.Xml;
 
 namespace SitemapScanner
@@ -73,7 +74,7 @@ namespace SitemapScanner
         public static Dictionary<string, string> ProcessSiteMapUrls(List<string> listUrls)
         {
             Dictionary<string, string> statusErrors = new Dictionary<string, string>();
-            foreach (var url in listUrls)
+            Parallel.ForEach(listUrls, url =>
             {
                 Console.WriteLine(string.Format("Date/Time: {0}; Crawling: {1}", DateTime.Now.ToString(), url));
                 try
@@ -112,7 +113,7 @@ namespace SitemapScanner
                         statusErrors.Add(url, e.ToString());
                     }
                 }
-            }
+            });
             return statusErrors;
         }
     }
